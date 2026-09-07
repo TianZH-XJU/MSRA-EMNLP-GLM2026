@@ -1,0 +1,7 @@
+# MSRA release — evaluation environment
+# Python 3.12; CUDA GPU with >= 24 GB memory (all experiments ran on RTX 4090 24GB)
+torch==2.9.1
+transformers==5.5.4
+pandas>=2.0
+numpy>=1.26
+tqdm>=4.66
