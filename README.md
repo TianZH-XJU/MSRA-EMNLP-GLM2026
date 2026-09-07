@@ -158,15 +158,13 @@ External model weights and datasets listed above remain under their own licenses
 @misc{msra2026,
   title  = {MSRA: A Parameter-Efficient Spectral Correction for Local Attention --
             Where It Helps, and Where It Fails},
-  author = {The MSRA Authors},
+  author = {TianZihan},
   year   = {2026},
   url    = {<this repository>},
   license = {CC-BY-4.0}
 }
 ```
 
-> Before publishing, replace `The MSRA Authors` in `LICENSE` and the citation block with the final author list.
-> 发布前请将 `LICENSE` 与引用条目中的 "The MSRA Authors" 替换为正式作者名单。
 
 ## Notes on reproducibility / 可复现性说明
 
