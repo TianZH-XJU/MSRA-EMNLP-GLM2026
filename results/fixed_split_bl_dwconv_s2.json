@@ -1,0 +1,56 @@
+{
+  "provenance": {
+    "manifest": "results/eval_split_256.json",
+    "manifest_sha256": "8555f6e90a9280220997b2f4b4a6438e26fe7fa0d6fabbe069257c8d901167f6",
+    "code_sha256": "8204e90af63b58b7",
+    "n_chunks": 16,
+    "lengths": [
+      512
+    ]
+  },
+  "arms": {
+    "full": {
+      "512": 16.910097122192383
+    },
+    "local": {
+      "512": 371.5963134765625
+    },
+    "baseline_dwconv": {
+      "512": 94.13829803466797
+    }
+  },
+  "load_check": {
+    "R_bl_dwconv_s2_L8": {
+      "missing": [],
+      "unexpected": []
+    },
+    "R_bl_dwconv_s2_L9": {
+      "missing": [],
+      "unexpected": []
+    },
+    "R_bl_dwconv_s2_L10": {
+      "missing": [],
+      "unexpected": []
+    },
+    "R_bl_dwconv_s2_L11": {
+      "missing": [],
+      "unexpected": []
+    },
+    "R_bl_dwconv_s2_L12": {
+      "missing": [],
+      "unexpected": []
+    },
+    "R_bl_dwconv_s2_L13": {
+      "missing": [],
+      "unexpected": []
+    },
+    "R_bl_dwconv_s2_L14": {
+      "missing": [],
+      "unexpected": []
+    },
+    "R_bl_dwconv_s2_L15": {
+      "missing": [],
+      "unexpected": []
+    }
+  }
+}

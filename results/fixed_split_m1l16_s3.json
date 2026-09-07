@@ -1,0 +1,26 @@
+{
+  "provenance": {
+    "manifest": "results/eval_split_256.json",
+    "manifest_sha256": "8555f6e90a9280220997b2f4b4a6438e26fe7fa0d6fabbe069257c8d901167f6",
+    "code_sha256": "8204e90af63b58b7",
+    "n_chunks": 16,
+    "lengths": [
+      512
+    ]
+  },
+  "arms": {
+    "full": {
+      "512": 16.910097122192383
+    },
+    "local": {
+      "512": 371.5963134765625
+    },
+    "R_M1L16_s3": {
+      "512": 259.04345703125
+    },
+    "R_M1L16_s3_meta": {
+      "ckpt_sha256": "88a5434372f46425",
+      "n_patched_layers": 16
+    }
+  }
+}

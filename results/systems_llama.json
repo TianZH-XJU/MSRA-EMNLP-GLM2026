@@ -1,0 +1,152 @@
+{
+  "full": [
+    {
+      "seq_len": 512,
+      "tokens_per_sec": 39198.5,
+      "ms_per_run": 13.1,
+      "peak_memory_gb": 2.43,
+      "label": "Full",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 1024,
+      "tokens_per_sec": 30082.1,
+      "ms_per_run": 34.0,
+      "peak_memory_gb": 2.59,
+      "label": "Full",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 2048,
+      "tokens_per_sec": 20314.9,
+      "ms_per_run": 100.8,
+      "peak_memory_gb": 3.37,
+      "label": "Full",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 4096,
+      "tokens_per_sec": 12835.3,
+      "ms_per_run": 319.1,
+      "peak_memory_gb": 6.44,
+      "label": "Full",
+      "model_type": "llama",
+      "status": "ok"
+    }
+  ],
+  "full_decode": [
+    {
+      "seq_len": 2048,
+      "new_tokens": 128,
+      "batch_size": 1,
+      "decode_tok_per_sec": 114.8,
+      "ms_per_token": 8.71,
+      "peak_memory_gb": 3.49,
+      "label": "full",
+      "status": "ok"
+    }
+  ],
+  "local": [
+    {
+      "seq_len": 512,
+      "tokens_per_sec": 39375.2,
+      "ms_per_run": 13.0,
+      "peak_memory_gb": 2.43,
+      "label": "Local ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 1024,
+      "tokens_per_sec": 29471.4,
+      "ms_per_run": 34.7,
+      "peak_memory_gb": 2.59,
+      "label": "Local ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 2048,
+      "tokens_per_sec": 20165.8,
+      "ms_per_run": 101.6,
+      "peak_memory_gb": 3.38,
+      "label": "Local ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 4096,
+      "tokens_per_sec": 12484.1,
+      "ms_per_run": 328.1,
+      "peak_memory_gb": 6.47,
+      "label": "Local ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    }
+  ],
+  "local_decode": [
+    {
+      "seq_len": 2048,
+      "new_tokens": 128,
+      "batch_size": 1,
+      "decode_tok_per_sec": 119.8,
+      "ms_per_token": 8.345,
+      "peak_memory_gb": 3.38,
+      "label": "local",
+      "status": "ok"
+    }
+  ],
+  "qcmsa": [
+    {
+      "seq_len": 512,
+      "tokens_per_sec": 4527.4,
+      "ms_per_run": 113.1,
+      "peak_memory_gb": 4.33,
+      "label": "QC-MSA ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 1024,
+      "tokens_per_sec": 4369.6,
+      "ms_per_run": 234.3,
+      "peak_memory_gb": 7.4,
+      "label": "QC-MSA ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 2048,
+      "tokens_per_sec": 4045.3,
+      "ms_per_run": 506.3,
+      "peak_memory_gb": 13.65,
+      "label": "QC-MSA ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 4096,
+      "label": "QC-MSA ws=128",
+      "model_type": "llama",
+      "tokens_per_sec": 0,
+      "ms_per_run": 0,
+      "peak_memory_gb": 0,
+      "status": "OOM"
+    }
+  ],
+  "qcmsa_decode": [
+    {
+      "seq_len": 2048,
+      "new_tokens": 128,
+      "batch_size": 1,
+      "decode_tok_per_sec": 119.8,
+      "ms_per_token": 8.346,
+      "peak_memory_gb": 18.73,
+      "label": "qcmsa",
+      "status": "ok"
+    }
+  ]
+}

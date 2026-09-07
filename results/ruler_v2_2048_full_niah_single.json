@@ -1,0 +1,9 @@
+{
+  "full": {
+    "avg_loss": 0.44635416666666666,
+    "ppl": 1.5626047849655151,
+    "total_tokens": 120,
+    "n_examples": 30,
+    "scorer_version": "v2-needle-aware-full-answer"
+  }
+}

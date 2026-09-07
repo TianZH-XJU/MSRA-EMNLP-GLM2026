@@ -1,0 +1,33 @@
+{
+  "provenance": {
+    "manifest": "results/eval_split_256.json",
+    "manifest_sha256": "8555f6e90a9280220997b2f4b4a6438e26fe7fa0d6fabbe069257c8d901167f6",
+    "code_sha256": "580ef8165f1ef096",
+    "n_chunks": 16,
+    "lengths": [
+      1024
+    ]
+  },
+  "arms": {
+    "full": {
+      "1024": 18.079790115356445
+    },
+    "local": {
+      "1024": 545.6910400390625
+    },
+    "R_M1L8_s2": {
+      "1024": 474.2710266113281
+    },
+    "R_M1L8_s2_meta": {
+      "ckpt_sha256": "c1b60097c8f9917a",
+      "n_patched_layers": 8
+    },
+    "R_M4L4_s2": {
+      "1024": 502.67364501953125
+    },
+    "R_M4L4_s2_meta": {
+      "ckpt_sha256": "a3e9bff83569f89c",
+      "n_patched_layers": 4
+    }
+  }
+}

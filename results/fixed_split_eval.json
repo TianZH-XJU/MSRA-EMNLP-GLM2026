@@ -1,0 +1,82 @@
+{
+  "provenance": {
+    "manifest": "results/eval_split_256.json",
+    "manifest_sha256": "8555f6e90a9280220997b2f4b4a6438e26fe7fa0d6fabbe069257c8d901167f6",
+    "code_sha256": "40b4d6346bdd8aef",
+    "n_chunks": 16,
+    "lengths": [
+      512
+    ]
+  },
+  "arms": {
+    "full": {
+      "512": 16.910097122192383
+    },
+    "local": {
+      "512": 371.5963134765625
+    },
+    "final_M1_L8_s2": {
+      "512": 328.0128173828125
+    },
+    "final_M1_L8_s2_meta": {
+      "ckpt_sha256": "adc6bffa552de0df",
+      "n_patched_layers": 8
+    },
+    "R_M1L8_s2": {
+      "512": 327.1313781738281
+    },
+    "R_M1L8_s2_meta": {
+      "ckpt_sha256": "c1b60097c8f9917a",
+      "n_patched_layers": 8
+    },
+    "R_M1L8_s3": {
+      "512": 327.7721862792969
+    },
+    "R_M1L8_s3_meta": {
+      "ckpt_sha256": "bf2b470c3e50ea0c",
+      "n_patched_layers": 8
+    },
+    "R_M1L8_s4": {
+      "512": 327.1313781738281
+    },
+    "R_M1L8_s4_meta": {
+      "ckpt_sha256": "f1a3742241707100",
+      "n_patched_layers": 8
+    },
+    "R_M1L4_s2": {
+      "512": 352.4718322753906
+    },
+    "R_M1L4_s2_meta": {
+      "ckpt_sha256": "3553f00e1d388f6f",
+      "n_patched_layers": 4
+    },
+    "R_M1L4_s3": {
+      "512": 352.7305908203125
+    },
+    "R_M1L4_s3_meta": {
+      "ckpt_sha256": "171074f82c9de75b",
+      "n_patched_layers": 4
+    },
+    "R_M4L4_s2": {
+      "512": 341.35595703125
+    },
+    "R_M4L4_s2_meta": {
+      "ckpt_sha256": "a3e9bff83569f89c",
+      "n_patched_layers": 4
+    },
+    "R_M4L4_s3": {
+      "512": 340.7719421386719
+    },
+    "R_M4L4_s3_meta": {
+      "ckpt_sha256": "c95ecd8de4dfec3a",
+      "n_patched_layers": 4
+    },
+    "llama_512_s2": {
+      "512": 368.42840576171875
+    },
+    "llama_512_s2_meta": {
+      "ckpt_sha256": "f1280b5ff36a76db",
+      "n_patched_layers": 8
+    }
+  }
+}

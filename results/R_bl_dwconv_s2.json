@@ -1,0 +1,37 @@
+{
+  "exp_name": "R_bl_dwconv_s2",
+  "baseline": {
+    "local_512": 394.8372497558594,
+    "full_512": 15.566289901733398
+  },
+  "config": {
+    "patch_layers": 8,
+    "steps": 3000,
+    "lr": 0.0001,
+    "seed": 2,
+    "n_trainables": 131072
+  },
+  "final": {
+    "512": 98.35191345214844
+  },
+  "best": {
+    "512": 98.35191345214844
+  },
+  "history": [
+    {
+      "step": 1499,
+      "loss": 3.4392032623291016,
+      "ppl_512": 101.67891693115234
+    },
+    {
+      "step": 2999,
+      "loss": 4.201187610626221,
+      "ppl_512": 98.35191345214844
+    }
+  ],
+  "provenance": {
+    "manifest": "results/eval_split_256.json",
+    "manifest_sha256": "8555f6e90a9280220997b2f4b4a6438e26fe7fa0d6fabbe069257c8d901167f6",
+    "code_sha256": "580ef8165f1ef096"
+  }
+}

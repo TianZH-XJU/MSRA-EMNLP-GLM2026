@@ -1,0 +1,10 @@
+{
+  "step0_fp16_s4": 327.2894287109375,
+  "step1_fp32": {
+    "s2": 327.28741455078125,
+    "s3": 327.7911071777344,
+    "s4": 327.2366943359375
+  },
+  "verdict": "hypothesis A confirmed (fp16 quantization); canonical 12.4% accepted (fp32 12.35-12.51%)",
+  "step2_note": "in-loop 350.237 not reproducible from ckpt (350.066, delta 0.17) -> in-loop evaluated live training state; canonical = independent eval; root cause recorded not blocking"
+}

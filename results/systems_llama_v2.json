@@ -1,0 +1,386 @@
+{
+  "full": [
+    {
+      "seq_len": 512,
+      "tokens_per_sec": 39175.3,
+      "ms_per_run": 13.1,
+      "peak_memory_gb": 2.43,
+      "label": "Full",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 1024,
+      "tokens_per_sec": 31116.0,
+      "ms_per_run": 32.9,
+      "peak_memory_gb": 2.59,
+      "label": "Full",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 2048,
+      "tokens_per_sec": 20311.2,
+      "ms_per_run": 100.8,
+      "peak_memory_gb": 3.37,
+      "label": "Full",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 4096,
+      "tokens_per_sec": 12824.9,
+      "ms_per_run": 319.4,
+      "peak_memory_gb": 6.44,
+      "label": "Full",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 512,
+      "tokens_per_sec": 38673.3,
+      "ms_per_run": 105.9,
+      "peak_memory_gb": 3.3,
+      "label": "Full",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 1024,
+      "tokens_per_sec": 29295.5,
+      "ms_per_run": 279.6,
+      "peak_memory_gb": 4.53,
+      "label": "Full",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 2048,
+      "tokens_per_sec": 19453.7,
+      "ms_per_run": 842.2,
+      "peak_memory_gb": 10.78,
+      "label": "Full",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 4096,
+      "label": "Full",
+      "model_type": "llama",
+      "tokens_per_sec": 0,
+      "ms_per_run": 0,
+      "peak_memory_gb": 0,
+      "status": "OOM"
+    }
+  ],
+  "full_decode": [
+    {
+      "seq_len": 2048,
+      "new_tokens": 128,
+      "batch_size": 1,
+      "decode_tok_per_sec": 115.9,
+      "ms_per_token": 8.628,
+      "peak_memory_gb": 3.49,
+      "label": "full",
+      "status": "ok"
+    }
+  ],
+  "full_profile": [
+    {
+      "op": "aten::mm",
+      "self_cuda_ms": 30.24
+    },
+    {
+      "op": "ampere_fp16_s1688gemm_fp16_128x128_ldg8_f2f_stages_32x1_tn",
+      "self_cuda_ms": 30.21
+    },
+    {
+      "op": "aten::_softmax",
+      "self_cuda_ms": 21.18
+    },
+    {
+      "op": "void at::native::(anonymous namespace)::cunn_SoftMaxForwardS",
+      "self_cuda_ms": 21.18
+    },
+    {
+      "op": "aten::copy_",
+      "self_cuda_ms": 14.67
+    },
+    {
+      "op": "void at::native::vectorized_elementwise_kernel<4, at::native",
+      "self_cuda_ms": 13.84
+    },
+    {
+      "op": "aten::mul",
+      "self_cuda_ms": 11.86
+    },
+    {
+      "op": "aten::add",
+      "self_cuda_ms": 10.35
+    },
+    {
+      "op": "aten::bmm",
+      "self_cuda_ms": 10.15
+    },
+    {
+      "op": "void at::native::elementwise_kernel<128, 4, at::native::gpu_",
+      "self_cuda_ms": 9.93
+    }
+  ],
+  "local": [
+    {
+      "seq_len": 512,
+      "tokens_per_sec": 36007.5,
+      "ms_per_run": 14.2,
+      "peak_memory_gb": 2.43,
+      "label": "Local ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 1024,
+      "tokens_per_sec": 30365.2,
+      "ms_per_run": 33.7,
+      "peak_memory_gb": 2.59,
+      "label": "Local ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 2048,
+      "tokens_per_sec": 20052.4,
+      "ms_per_run": 102.1,
+      "peak_memory_gb": 3.38,
+      "label": "Local ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 4096,
+      "tokens_per_sec": 12457.2,
+      "ms_per_run": 328.8,
+      "peak_memory_gb": 6.47,
+      "label": "Local ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 512,
+      "tokens_per_sec": 38310.3,
+      "ms_per_run": 106.9,
+      "peak_memory_gb": 3.3,
+      "label": "Local ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 1024,
+      "tokens_per_sec": 29141.6,
+      "ms_per_run": 281.1,
+      "peak_memory_gb": 4.53,
+      "label": "Local ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 2048,
+      "tokens_per_sec": 19493.7,
+      "ms_per_run": 840.5,
+      "peak_memory_gb": 10.79,
+      "label": "Local ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 4096,
+      "label": "Local ws=128",
+      "model_type": "llama",
+      "tokens_per_sec": 0,
+      "ms_per_run": 0,
+      "peak_memory_gb": 0,
+      "status": "OOM"
+    }
+  ],
+  "local_decode": [
+    {
+      "seq_len": 2048,
+      "new_tokens": 128,
+      "batch_size": 1,
+      "decode_tok_per_sec": 100.9,
+      "ms_per_token": 9.909,
+      "peak_memory_gb": 3.38,
+      "label": "local",
+      "status": "ok"
+    }
+  ],
+  "local_profile": [
+    {
+      "op": "ampere_fp16_s1688gemm_fp16_128x128_ldg8_f2f_stages_32x1_tn",
+      "self_cuda_ms": 31.01
+    },
+    {
+      "op": "aten::mm",
+      "self_cuda_ms": 30.64
+    },
+    {
+      "op": "aten::_softmax",
+      "self_cuda_ms": 20.78
+    },
+    {
+      "op": "void at::native::(anonymous namespace)::cunn_SoftMaxForwardS",
+      "self_cuda_ms": 20.78
+    },
+    {
+      "op": "aten::copy_",
+      "self_cuda_ms": 14.8
+    },
+    {
+      "op": "void at::native::vectorized_elementwise_kernel<4, at::native",
+      "self_cuda_ms": 13.97
+    },
+    {
+      "op": "aten::mul",
+      "self_cuda_ms": 11.89
+    },
+    {
+      "op": "aten::bmm",
+      "self_cuda_ms": 10.59
+    },
+    {
+      "op": "aten::add",
+      "self_cuda_ms": 10.35
+    },
+    {
+      "op": "void at::native::elementwise_kernel<128, 4, at::native::gpu_",
+      "self_cuda_ms": 9.93
+    }
+  ],
+  "qcmsa": [
+    {
+      "seq_len": 512,
+      "tokens_per_sec": 4394.8,
+      "ms_per_run": 116.5,
+      "peak_memory_gb": 4.33,
+      "label": "QC-MSA ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 1024,
+      "tokens_per_sec": 4349.9,
+      "ms_per_run": 235.4,
+      "peak_memory_gb": 7.4,
+      "label": "QC-MSA ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 2048,
+      "tokens_per_sec": 4029.2,
+      "ms_per_run": 508.3,
+      "peak_memory_gb": 13.65,
+      "label": "QC-MSA ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 4096,
+      "label": "QC-MSA ws=128",
+      "model_type": "llama",
+      "tokens_per_sec": 0,
+      "ms_per_run": 0,
+      "peak_memory_gb": 0,
+      "status": "OOM"
+    },
+    {
+      "seq_len": 512,
+      "label": "QC-MSA ws=128",
+      "model_type": "llama",
+      "tokens_per_sec": 0,
+      "ms_per_run": 0,
+      "peak_memory_gb": 0,
+      "status": "OOM"
+    },
+    {
+      "seq_len": 1024,
+      "label": "QC-MSA ws=128",
+      "model_type": "llama",
+      "tokens_per_sec": 0,
+      "ms_per_run": 0,
+      "peak_memory_gb": 0,
+      "status": "OOM"
+    },
+    {
+      "seq_len": 2048,
+      "label": "QC-MSA ws=128",
+      "model_type": "llama",
+      "tokens_per_sec": 0,
+      "ms_per_run": 0,
+      "peak_memory_gb": 0,
+      "status": "OOM"
+    },
+    {
+      "seq_len": 4096,
+      "label": "QC-MSA ws=128",
+      "model_type": "llama",
+      "tokens_per_sec": 0,
+      "ms_per_run": 0,
+      "peak_memory_gb": 0,
+      "status": "OOM"
+    }
+  ],
+  "qcmsa_decode": [
+    {
+      "seq_len": 2048,
+      "new_tokens": 128,
+      "batch_size": 1,
+      "decode_tok_per_sec": 100.4,
+      "ms_per_token": 9.964,
+      "peak_memory_gb": 21.74,
+      "label": "qcmsa",
+      "status": "ok"
+    }
+  ],
+  "qcmsa_profile": [
+    {
+      "op": "aten::copy_",
+      "self_cuda_ms": 217.51
+    },
+    {
+      "op": "void at::native::elementwise_kernel<128, 2, at::native::gpu_",
+      "self_cuda_ms": 115.33
+    },
+    {
+      "op": "aten::mul",
+      "self_cuda_ms": 97.51
+    },
+    {
+      "op": "void at::native::elementwise_kernel<128, 2, at::native::gpu_",
+      "self_cuda_ms": 86.83
+    },
+    {
+      "op": "aten::_fft_r2c",
+      "self_cuda_ms": 37.97
+    },
+    {
+      "op": "void vector_fft_symm_r2c<4096u, EPT<16u>, 1u, 10u, (padding_",
+      "self_cuda_ms": 37.97
+    },
+    {
+      "op": "void at::native::elementwise_kernel<128, 2, at::native::gpu_",
+      "self_cuda_ms": 37.67
+    },
+    {
+      "op": "aten::_fft_c2r",
+      "self_cuda_ms": 37.66
+    },
+    {
+      "op": "void vector_fft_symm_c2r<4096u, EPT<16u>, 1u, 10u, (padding_",
+      "self_cuda_ms": 37.66
+    },
+    {
+      "op": "void at::native::vectorized_elementwise_kernel<4, at::native",
+      "self_cuda_ms": 37.36
+    }
+  ]
+}

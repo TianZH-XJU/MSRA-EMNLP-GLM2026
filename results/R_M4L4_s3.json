@@ -1,0 +1,123 @@
+{
+  "exp_name": "R_M4L4_s3",
+  "config": {
+    "window": 128,
+    "experts": 4,
+    "rank": 16,
+    "patch_layers": 4,
+    "steps": 2000,
+    "lr": 0.0001,
+    "train_lengths": [
+      512
+    ],
+    "multiscale_sigmas": [
+      3.0,
+      4.0,
+      5.0,
+      6.0
+    ]
+  },
+  "baseline": {
+    "local_256": 142.00787353515625,
+    "local_512": 394.8372497558594,
+    "full_256": 17.3940372467041,
+    "full_512": 15.566289901733398
+  },
+  "pre_train": {
+    "256": 142.00787353515625,
+    "512": 394.8372497558594
+  },
+  "final": {
+    "256": 142.00787353515625,
+    "512": 394.8372497558594
+  },
+  "best": {
+    "256": 137.554443359375,
+    "512": 371.0513000488281
+  },
+  "history": [
+    {
+      "step": 0,
+      "loss": 5.27734375,
+      "gamma_mean": -3.99999953515362e-05,
+      "log_sigma_mean": [
+        2.99998,
+        3.99999,
+        4.99999,
+        5.99999
+      ],
+      "ppl_256": 142.00787353515625,
+      "ppl_512": 394.8372497558594
+    },
+    {
+      "step": 500,
+      "loss": 5.9296875,
+      "gamma_mean": -0.001975269988179207,
+      "log_sigma_mean": [
+        2.97498,
+        3.97572,
+        5.00577,
+        6.01437
+      ],
+      "ppl_256": 139.86619567871094,
+      "ppl_512": 383.22808837890625
+    },
+    {
+      "step": 1000,
+      "loss": 5.41796875,
+      "gamma_mean": -0.0028911251574754715,
+      "log_sigma_mean": [
+        2.94576,
+        3.9576,
+        5.01889,
+        6.05425
+      ],
+      "ppl_256": 137.554443359375,
+      "ppl_512": 371.0513000488281
+    },
+    {
+      "step": 1500,
+      "loss": 5.984375,
+      "gamma_mean": NaN,
+      "log_sigma_mean": [
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ],
+      "ppl_256": 142.00787353515625,
+      "ppl_512": 394.8372497558594
+    },
+    {
+      "step": 1999,
+      "loss": 5.97265625,
+      "gamma_mean": NaN,
+      "log_sigma_mean": [
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ],
+      "ppl_256": 142.00787353515625,
+      "ppl_512": 394.8372497558594
+    }
+  ],
+  "n_spectral": 22548,
+  "provenance": {
+    "eval_manifest": {
+      "path": "results/eval_split_256.json",
+      "sha256": "8555f6e90a9280220997b2f4b4a6438e26fe7fa0d6fabbe069257c8d901167f6",
+      "n_chunks_per_len": {
+        "256": 16,
+        "512": 16
+      }
+    },
+    "hard_zero_empty_far": true,
+    "code_sha256": {
+      "kernel": "580ef8165f1ef096",
+      "forwards": "ee9dd88a1db25af1",
+      "train": "bfe19193af7d661a"
+    },
+    "cache_fix": "train: no kernel-FFT caching under grad; inference: key=sigma (0a-4)"
+  }
+}

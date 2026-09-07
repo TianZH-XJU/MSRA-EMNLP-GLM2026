@@ -1,0 +1,33 @@
+{
+  "provenance": {
+    "manifest": "results/eval_split_256.json",
+    "manifest_sha256": "8555f6e90a9280220997b2f4b4a6438e26fe7fa0d6fabbe069257c8d901167f6",
+    "code_sha256": "580ef8165f1ef096",
+    "n_chunks": 16,
+    "lengths": [
+      512
+    ]
+  },
+  "arms": {
+    "full": {
+      "512": 16.910097122192383
+    },
+    "local": {
+      "512": 371.5963134765625
+    },
+    "R_M4gateoff_L4_s2": {
+      "512": 349.8946533203125
+    },
+    "R_M4gateoff_L4_s2_meta": {
+      "ckpt_sha256": "8701283104eb2a48",
+      "n_patched_layers": 4
+    },
+    "R_M4L4_s3": {
+      "512": 371.5963134765625
+    },
+    "R_M4L4_s3_meta": {
+      "ckpt_sha256": "56c86c98786a4c23",
+      "n_patched_layers": 4
+    }
+  }
+}

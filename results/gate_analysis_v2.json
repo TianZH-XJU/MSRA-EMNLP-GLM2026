@@ -1,0 +1,58 @@
+{
+  "provenance": {
+    "ckpt": "results/R_M4L8_s2b.pt",
+    "protocol": "documented here because the paper cites it):\n  - entropy ratio  = mean H(lambda) / ln(M) over all patched layers, positions and\n    fixed-split chunks. 1.0 = uniform (decorative), <1 = selective.\n  - perturbation response = mean |lambda(q) - lambda(q')| at the last position when\n    the QUERY token is replaced by a random vocabulary token, divided by the same\n    quantity when a FAR-CONTEXT token (position 64) is replaced instead. The gate\n    is query-conditioned by design, so a ratio >> 1 supports \"genuinely selective\".",
+    "n_chunks": 8,
+    "M": 4,
+    "code": "src/eval/gate_entropy_analysis.py"
+  },
+  "entropy_ratio_mean": 0.6279553025960922,
+  "per_layer": {
+    "8": {
+      "mean_entropy_nats": 1.1108319759368896,
+      "entropy_ratio": 0.8012958765029907,
+      "mean_kl_vs_uniform": 0.27546238899230957
+    },
+    "9": {
+      "mean_entropy_nats": 0.914036214351654,
+      "entropy_ratio": 0.6593377590179443,
+      "mean_kl_vs_uniform": 0.47225815057754517
+    },
+    "10": {
+      "mean_entropy_nats": 0.9602580070495605,
+      "entropy_ratio": 0.6926797032356262,
+      "mean_kl_vs_uniform": 0.42603644728660583
+    },
+    "11": {
+      "mean_entropy_nats": 1.002345323562622,
+      "entropy_ratio": 0.7230393290519714,
+      "mean_kl_vs_uniform": 0.38394904136657715
+    },
+    "12": {
+      "mean_entropy_nats": 0.5152137279510498,
+      "entropy_ratio": 0.3716481328010559,
+      "mean_kl_vs_uniform": 0.8710806369781494
+    },
+    "13": {
+      "mean_entropy_nats": 0.8600000143051147,
+      "entropy_ratio": 0.6203588843345642,
+      "mean_kl_vs_uniform": 0.5262943506240845
+    },
+    "14": {
+      "mean_entropy_nats": 0.7939742803573608,
+      "entropy_ratio": 0.5727313756942749,
+      "mean_kl_vs_uniform": 0.5923200845718384
+    },
+    "15": {
+      "mean_entropy_nats": 0.8075876832008362,
+      "entropy_ratio": 0.5825513601303101,
+      "mean_kl_vs_uniform": 0.578706681728363
+    }
+  },
+  "perturbation": {
+    "query_token_mean_dlambda": 0.055515279305836884,
+    "far_context_token_mean_dlambda": 0.000491526221139793,
+    "query_over_context_ratio": 112.94469535542439,
+    "n_probes": 256
+  }
+}

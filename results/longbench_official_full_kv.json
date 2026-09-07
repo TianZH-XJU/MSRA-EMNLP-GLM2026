@@ -1,0 +1,65 @@
+{
+  "provenance": {
+    "ckpt": "results/R_M1L8_s2.pt",
+    "ckpt_sha256": "c1b60097c8f9917a",
+    "code_sha256": "8204e90af63b58b7",
+    "max_prompt_tokens": 2048,
+    "metrics": "official LongBench (qa_f1 / rouge_l), greedy decode"
+  },
+  "triviaqa": {
+    "full": {
+      "metric": "qa_f1",
+      "score": 0.1970309461124286,
+      "n": 30,
+      "empty_generations": 0
+    }
+  },
+  "narrativeqa": {
+    "full": {
+      "metric": "qa_f1",
+      "score": 0.07539971187406815,
+      "n": 30,
+      "empty_generations": 0
+    }
+  },
+  "hotpotqa": {
+    "full": {
+      "metric": "qa_f1",
+      "score": 0.03769659376982031,
+      "n": 30,
+      "empty_generations": 9
+    }
+  },
+  "2wikimqa": {
+    "full": {
+      "metric": "qa_f1",
+      "score": 0.03239239987066074,
+      "n": 30,
+      "empty_generations": 15
+    }
+  },
+  "qasper": {
+    "full": {
+      "metric": "qa_f1",
+      "score": 0.040949469806612064,
+      "n": 30,
+      "empty_generations": 0
+    }
+  },
+  "gov_report": {
+    "full": {
+      "metric": "rouge_l",
+      "score": 0.13686010968453674,
+      "n": 30,
+      "empty_generations": 1
+    }
+  },
+  "qmsum": {
+    "full": {
+      "metric": "rouge_l",
+      "score": 0.04240925997587945,
+      "n": 30,
+      "empty_generations": 0
+    }
+  }
+}

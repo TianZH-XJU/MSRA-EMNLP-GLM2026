@@ -1,0 +1,9 @@
+{
+  "local": {
+    "avg_loss": 8.065494791666667,
+    "ppl": 3182.729736328125,
+    "total_tokens": 120,
+    "n_examples": 30,
+    "scorer_version": "v2-needle-aware-full-answer"
+  }
+}

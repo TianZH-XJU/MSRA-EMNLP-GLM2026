@@ -1,0 +1,37 @@
+{
+  "exp_name": "R_bl_lora_s2",
+  "baseline": {
+    "local_512": 394.8372497558594,
+    "full_512": 15.566289901733398
+  },
+  "config": {
+    "patch_layers": 8,
+    "steps": 3000,
+    "lr": 0.0001,
+    "seed": 2,
+    "n_trainables": 32768
+  },
+  "final": {
+    "512": 62.58320999145508
+  },
+  "best": {
+    "512": 62.58320999145508
+  },
+  "history": [
+    {
+      "step": 1499,
+      "loss": 3.2100417613983154,
+      "ppl_512": 64.3057861328125
+    },
+    {
+      "step": 2999,
+      "loss": 3.8140177726745605,
+      "ppl_512": 62.58320999145508
+    }
+  ],
+  "provenance": {
+    "manifest": "results/eval_split_256.json",
+    "manifest_sha256": "8555f6e90a9280220997b2f4b4a6438e26fe7fa0d6fabbe069257c8d901167f6",
+    "code_sha256": "580ef8165f1ef096"
+  }
+}

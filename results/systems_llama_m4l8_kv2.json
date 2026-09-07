@@ -1,0 +1,120 @@
+{
+  "local": [
+    {
+      "seq_len": 512,
+      "tokens_per_sec": 37357.9,
+      "ms_per_run": 13.7,
+      "peak_memory_gb": 2.44,
+      "label": "Local ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 1024,
+      "tokens_per_sec": 30592.8,
+      "ms_per_run": 33.5,
+      "peak_memory_gb": 2.59,
+      "label": "Local ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 2048,
+      "tokens_per_sec": 20142.5,
+      "ms_per_run": 101.7,
+      "peak_memory_gb": 3.38,
+      "label": "Local ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 4096,
+      "tokens_per_sec": 12479.0,
+      "ms_per_run": 328.2,
+      "peak_memory_gb": 6.48,
+      "label": "Local ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 8192,
+      "tokens_per_sec": 6982.1,
+      "ms_per_run": 1173.3,
+      "peak_memory_gb": 18.77,
+      "label": "Local ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    }
+  ],
+  "local_decode": [
+    {
+      "seq_len": 2048,
+      "new_tokens": 64,
+      "batch_size": 1,
+      "decode_tok_per_sec": 114.8,
+      "ms_per_token": 8.711,
+      "peak_memory_gb": 3.5,
+      "label": "local",
+      "status": "ok"
+    }
+  ],
+  "qcmsa_decode": [
+    {
+      "seq_len": 2048,
+      "new_tokens": 64,
+      "batch_size": 1,
+      "decode_tok_per_sec": 114.0,
+      "ms_per_token": 8.776,
+      "peak_memory_gb": 10.72,
+      "label": "qcmsa",
+      "status": "ok"
+    }
+  ],
+  "qcmsa": [
+    {
+      "seq_len": 512,
+      "tokens_per_sec": 4543.0,
+      "ms_per_run": 112.7,
+      "peak_memory_gb": 8.4,
+      "label": "QC-MSA ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 1024,
+      "tokens_per_sec": 4402.1,
+      "ms_per_run": 232.6,
+      "peak_memory_gb": 11.47,
+      "label": "QC-MSA ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 2048,
+      "tokens_per_sec": 4050.9,
+      "ms_per_run": 505.6,
+      "peak_memory_gb": 13.65,
+      "label": "QC-MSA ws=128",
+      "model_type": "llama",
+      "status": "ok"
+    },
+    {
+      "seq_len": 4096,
+      "label": "QC-MSA ws=128",
+      "model_type": "llama",
+      "tokens_per_sec": 0,
+      "ms_per_run": 0,
+      "peak_memory_gb": 0,
+      "status": "OOM"
+    },
+    {
+      "seq_len": 8192,
+      "label": "QC-MSA ws=128",
+      "model_type": "llama",
+      "tokens_per_sec": 0,
+      "ms_per_run": 0,
+      "peak_memory_gb": 0,
+      "status": "OOM"
+    }
+  ]
+}

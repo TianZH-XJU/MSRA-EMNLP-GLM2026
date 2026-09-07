@@ -1,0 +1,26 @@
+{
+  "provenance": {
+    "manifest": "results/eval_split_256.json",
+    "manifest_sha256": "8555f6e90a9280220997b2f4b4a6438e26fe7fa0d6fabbe069257c8d901167f6",
+    "code_sha256": "8204e90af63b58b7",
+    "n_chunks": 16,
+    "lengths": [
+      512
+    ]
+  },
+  "arms": {
+    "full": {
+      "512": 16.910097122192383
+    },
+    "local": {
+      "512": 371.5963134765625
+    },
+    "R_gammaonly_M4L8_s2": {
+      "512": 335.80694580078125
+    },
+    "R_gammaonly_M4L8_s2_meta": {
+      "ckpt_sha256": "2e706036cf05c604",
+      "n_patched_layers": 8
+    }
+  }
+}
